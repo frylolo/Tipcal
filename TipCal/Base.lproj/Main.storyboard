@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="w89-cH-zqT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TipCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dont be Cheap! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pHd-bw-4Mr">
+                                <rect key="frame" x="51" y="104" width="223" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="56T-a7-jly">
+                                <rect key="frame" x="64" y="159" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="1" image="placeHolderStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NrS-Jf-Rla"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="7Oa-zT-v0C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gaz-uv-kg4">
+                                <rect key="frame" x="105" y="159" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="2" image="placeHolderStar.png"/>
+                                <state key="disabled" title="15%"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J77-t2-Dhd"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="vAK-5X-5F5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cDx-EG-rP1">
+                                <rect key="frame" x="146" y="159" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="3" image="placeHolderStar.png"/>
+                                <state key="disabled">
+                                    <string key="title" base64-UTF8="YES">
+CA
+</string>
+                                </state>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D1j-1e-UNH"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="PZM-yp-WeO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dj4-mG-ZuD">
+                                <rect key="frame" x="186" y="159" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="4" image="placeHolderStar.png"/>
+                                <state key="disabled" title="20%"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thR-L5-37M"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="nqe-P4-Ohd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gDJ-HU-kYY">
+                                <rect key="frame" x="227" y="159" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="5" image="placeHolderStar.png"/>
+                                <state key="disabled" title="25%"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uOB-E5-9ac"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="gc6-V6-fKs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jUc-0A-Jtp">
+                                <rect key="frame" x="49" y="479" width="223" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.0" contentMode="scaleToFill" id="1aZ-tP-wDA">
+                                <rect key="frame" x="21" y="231" width="282" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qru-Vr-3yj">
+                                        <rect key="frame" x="24" y="40" width="58" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="right" minimumFontSize="17" id="tk0-le-c32">
+                                        <rect key="frame" x="144" y="36" width="119" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.40560344827586209" colorSpace="calibratedRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="editingChanged" id="JC1-SO-pJg"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75686274509803919" green="0.88235294117647056" blue="0.99215686274509807" alpha="0.65363685344827582" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" id="WLH-Rm-zar">
+                                <rect key="frame" x="21" y="351" width="282" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jzf-3W-csg">
+                                        <rect key="frame" x="19" y="68" width="58" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip     %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oa6-Pm-ddB">
+                                        <rect key="frame" x="19" y="18" width="72" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SGa-ha-ghl">
+                                        <rect key="frame" x="87" y="18" width="43" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LWv-48-5aC">
+                                        <rect key="frame" x="138" y="17" width="119" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G8U-tl-8BI">
+                                        <rect key="frame" x="138" y="62" width="119" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81960784313725488" green="0.91764705882352937" blue="1" alpha="0.84622844827586208" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50980392156862742" green="0.7686274509803922" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="a1e-RE-Dh5" appends="YES" id="oiV-c0-Pof"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="fbB-no-qLm">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="pSd-aC-RMX">
+                            <connections>
+                                <segue destination="cfu-CZ-YgD" kind="push" id="y4K-Ex-cnF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="billTotalText" destination="tk0-le-c32" id="5V1-sZ-8W6"/>
+                        <outlet property="billView" destination="1aZ-tP-wDA" id="YSk-7T-AUg"/>
+                        <outlet property="feedMsgLabel" destination="jUc-0A-Jtp" id="05q-5U-0Qz"/>
+                        <outlet property="fiveStar" destination="gDJ-HU-kYY" id="SNS-PB-mYH"/>
+                        <outlet property="fourStar" destination="Dj4-mG-ZuD" id="Rli-ES-3px"/>
+                        <outlet property="oneStar" destination="56T-a7-jly" id="edf-S4-hPU"/>
+                        <outlet property="ratePercentage" destination="SGa-ha-ghl" id="m2S-Rd-Mkc"/>
+                        <outlet property="resultView" destination="WLH-Rm-zar" id="W8Y-zM-b4h"/>
+                        <outlet property="tipRawLabel" destination="LWv-48-5aC" id="KaV-0d-Iny"/>
+                        <outlet property="tipTotalLabel" destination="G8U-tl-8BI" id="Vho-TG-Yyj"/>
+                        <outlet property="treeStar" destination="cDx-EG-rP1" id="n8n-oR-aqf"/>
+                        <outlet property="twoStar" destination="gaz-uv-kg4" id="0Pu-aQ-kRe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="a1e-RE-Dh5">
+                    <connections>
+                        <action selector="OnTabCalc:" destination="BYZ-38-t0r" id="eoY-ed-CHl"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="685" y="396"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LXv-51-T8x">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w89-cH-zqT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7o2-EH-cIL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uyk-Sr-n6f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MRK-t9-T6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254.40000000000001" y="397.60000000000002"/>
+        </scene>
+        <!--Settings -->
+        <scene sceneID="IdJ-y8-qXG">
+            <objects>
+                <viewController id="cfu-CZ-YgD" customClass="SettingsViewController" customModule="TipCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BrE-Bs-pJ7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sh2-iE-7aU">
+                                <rect key="frame" x="29" y="196" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cij-qc-YrY"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="EgQ-Fn-cpN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8OP-u2-aCF">
+                                <rect key="frame" x="55" y="196" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v1Y-V7-3yL"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="nj8-pE-vz5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1JB-sm-XLo">
+                                <rect key="frame" x="81" y="196" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkY-Wm-gGC"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="41B-ZA-cDp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VEw-rN-uoC">
+                                <rect key="frame" x="106" y="196" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyh-if-cBq"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="qvr-CH-SpY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oVy-JU-sDA">
+                                <rect key="frame" x="29" y="292" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiW-P5-r4F"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="LK1-K7-crq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CTp-mF-zqj">
+                                <rect key="frame" x="55" y="292" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JDr-Wa-GsT"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="sq4-2d-b5y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sAr-xi-Zvh">
+                                <rect key="frame" x="81" y="292" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ug2-kc-k7f"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="NIw-dH-AET"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ysV-5g-6SO">
+                                <rect key="frame" x="29" y="390" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QGU-hm-KMS"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="cnX-Kj-Uz9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AX0-qG-OpY">
+                                <rect key="frame" x="55" y="390" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="26X-7e-XQN"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="KBW-6l-Rwd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ml6-os-Jc8">
+                                <rect key="frame" x="29" y="99" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Czh-3Q-zSH"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="1FD-Zc-Yfy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ue9-za-GAN">
+                                <rect key="frame" x="55" y="99" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZN-Vd-7Ru"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="7u3-c8-1ob"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bCM-kA-qYw">
+                                <rect key="frame" x="81" y="99" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4v-IV-PBS"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="EHC-eu-X7m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nfw-bK-YBJ">
+                                <rect key="frame" x="106" y="99" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jO-ub-c6n"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="CT6-Wf-bee"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8iw-Ts-CSt">
+                                <rect key="frame" x="131" y="99" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUD-y7-qby"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="DUo-bz-w3W"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="20.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="s7W-Zu-o0h">
+                                <rect key="frame" x="229" y="198" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="SvData:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="Q5N-Ys-6LZ"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="18.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="AYe-1f-G70">
+                                <rect key="frame" x="229" y="294" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="SvData:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="BDq-va-86X"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ZMP-CP-1q8">
+                                <rect key="frame" x="229" y="392" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="SvData:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="Ox0-z4-ThW"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3ra-g1-5lK">
+                                <rect key="frame" x="29" y="489" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="selectedStar.png"/>
+                                <state key="disabled" title="1"/>
+                                <connections>
+                                    <action selector="billChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B5e-5s-8dS"/>
+                                    <action selector="oneStarAction:" destination="BYZ-38-t0r" eventType="touchDown" id="HF6-bl-DMd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Azn-a3-Jbi">
+                                <rect key="frame" x="229" y="491" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="SvData:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="ku7-gJ-TjF"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="krZ-fw-2u6">
+                                <rect key="frame" x="29" y="140" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="SvData:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="IRI-eF-tLc"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="CEw-ky-j5X">
+                                <rect key="frame" x="29" y="236" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="SvData:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="mar-Sk-K9b"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="lNa-Gr-lYf">
+                                <rect key="frame" x="29" y="332" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="SvData:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="Ig7-dr-BOT"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="4HL-Gu-pHA">
+                                <rect key="frame" x="29" y="430" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="SvData:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="CZ3-rE-eaT"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="cAr-bb-FRi">
+                                <rect key="frame" x="29" y="529" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="SvData:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="P9t-qO-G79"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="25.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ggK-bg-sB3">
+                                <rect key="frame" x="229" y="102" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="FormatField:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="Q1e-Ub-74Q"/>
+                                    <action selector="SvData:" destination="cfu-CZ-YgD" eventType="editingDidEnd" id="vVk-IS-4D0"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50980392159999999" green="0.76862745099999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="YPu-gS-c1f" appends="YES" id="P1q-OE-bMm"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings " id="9TE-qN-Ibg">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="gCw-MI-YfX">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e1j-bx-GJp">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="StarMessage1" destination="cAr-bb-FRi" id="LHQ-k7-v3x"/>
+                        <outlet property="StarMessage2" destination="4HL-Gu-pHA" id="jue-Ad-I3V"/>
+                        <outlet property="StarMessage3" destination="lNa-Gr-lYf" id="RTY-Zf-3f3"/>
+                        <outlet property="StarMessage4" destination="CEw-ky-j5X" id="QsJ-fD-ZxQ"/>
+                        <outlet property="StarMessage5" destination="krZ-fw-2u6" id="SoQ-WI-Fg6"/>
+                        <outlet property="StarPercentage1" destination="Azn-a3-Jbi" id="JmO-IW-2uS"/>
+                        <outlet property="StarPercentage2" destination="ZMP-CP-1q8" id="I3s-Hc-Dr3"/>
+                        <outlet property="StarPercentage3" destination="AYe-1f-G70" id="rLa-Qa-hWe"/>
+                        <outlet property="StarPercentage4" destination="s7W-Zu-o0h" id="PTP-Vt-L5v"/>
+                        <outlet property="StarPercentage5" destination="ggK-bg-sB3" id="Bb7-c6-pkp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thr-Wm-a1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YPu-gS-c1f">
+                    <connections>
+                        <action selector="OnTabCalc:" destination="cfu-CZ-YgD" id="Jt0-FZ-7Rd"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1100" y="396"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeHolderStar.png" width="512" height="512"/>
+        <image name="selectedStar.png" width="512" height="512"/>
+    </resources>
+</document>
